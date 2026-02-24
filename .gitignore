@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-public/images/manifest.json
+.env
 
 # Editor directories and files
 .vscode/*

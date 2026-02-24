@@ -1,9 +1,10 @@
 const axios = require('axios');
+require('dotenv').config();
 
 // Configuration Constants
-const ENDPOINT = 'http://127.0.0.1:8332';
-const USER = 'bitcoink';
-const PASSWORD = 'bitcoink';
+const ENDPOINT = process.env.BITCOIN_RPC_ENDPOINT || 'http://127.0.0.1:8332';
+const USER = process.env.BITCOIN_RPC_USER;
+const PASSWORD = process.env.BITCOIN_RPC_PASSWORD;
 
 async function makeRpcCall(method, params = []) {
     // Prepare the JSON-RPC request body

@@ -2,8 +2,18 @@
   "name": "bitcoin-rpc-ts",
   "version": "0.1.0",
   "description": "Bitcoin RPC TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/rpc_client_axios.ts",
+    "start:client": "ts-node src/rpc_client_axios_getblockchaininfo.ts"
+  },
   "dependencies": {
     "axios": "^1.7.0",
     "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }
